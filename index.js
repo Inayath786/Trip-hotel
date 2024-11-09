@@ -312,7 +312,7 @@ app.get('/hotels/filter/catogery/:category', (req, res) => {
 });
 
 //display all hotels
-app.get('/hotels', (req, res) => {
+app.get('/load-hotels', (req, res) => {
   let result1 = hotels.slice();
   res.json({ Hotels: result1 });
 });
